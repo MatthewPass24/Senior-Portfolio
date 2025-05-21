@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Portfolio Monitor</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Monitor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body class="d-flex align-items-center justify-content-center vh-100 bg-dark text-light">
 
-    <div class="monitor-container">
-        <div class="monitor">
-          <div class="screen d-flex flex-column justify-content-center align-items-center text-light text-center p-3">
-           <h1>Matthew Passantino</h1>
-            <div id="typed-text" class="typed-text mb-3"></div>
-            <div class="d-flex flex-wrap gap-2 justify-content-center">
-              <a href="landing.html" class="btn btn-info">About Me</a>
-              <a href="gallery.html" class="btn btn-info">Gallery</a>
-              <a href="#contact" class="btn btn-info">Contact</a>
+  <div class="main-container container-fluid">
+    <div class="row justify-content-center w-100">
+      <div class="col-12 col-md-10 col-lg-8">
+        <h1 class="name-header">Matthew Passantino</h1>
+        <div class="computer-container">
+          <div class="computer">
+            <div class="screen">
+              <div class="terminal">
+                <p class="typed-text">Welcome to my portfolio!</p>
+              </div>
+              <div class="buttons-container">
+                <a href="landing.html"><button class="nav-button" id="about">About Me</button></a>
+                <a href="gallery.html"><button class="nav-button" id="gallery">Gallery</button></a>
+                <button class="nav-button" id="contact">Contact</button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="stand"></div>
-        <div class="base"></div>
       </div>
-      
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
