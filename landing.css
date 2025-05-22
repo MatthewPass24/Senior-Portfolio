@@ -4,6 +4,22 @@ body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
   }
+  /*landing area*/
+.banner{
+  background: url("images/landing.jpg");
+  height: 90vh;
+  margin-top: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: overlay;
+  background-color: #0000003b;    
+}
 .timeline-section {
     background: linear-gradient(to bottom, #e1e9ec, #507994);
     padding: 60px 0;
@@ -104,3 +120,4 @@ body {
     color: #adb5bd;
     margin-bottom: 10px;
   }
+  

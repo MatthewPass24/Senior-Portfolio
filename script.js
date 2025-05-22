@@ -27,11 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3500 + i * 200); // starts after typing finishes (~3.5s)
   });
 
-  // Button click handlers
-  buttons.forEach(button => {
-    button.addEventListener('click', function () {
-      alert(`Navigating to ${this.id} page`);
-      // Example: window.location.href = `${this.id}.html`;
-    });
-  });
 });
