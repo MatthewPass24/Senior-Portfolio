@@ -3,11 +3,12 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
   }
   /*landing area*/
 .banner{
   background: url("images/landing.jpg");
-  height: 90vh;
+  height: 100vh;
   margin-top: 0;
   background-size: cover;
   background-position: center;

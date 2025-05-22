@@ -1,11 +1,23 @@
 body {
-    background: linear-gradient(to bottom, #e1e9ec, #507994);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: linear-gradient(to bottom, #dee3e6, #50799473);
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
+  }
+  .banner{
+    background: url("images/landing.jpg");
+    height: 100vh;
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: overlay;
+    background-color: #0000003b;    
   }
 .image-container {
     position: relative;
