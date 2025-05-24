@@ -28,3 +28,31 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 });
+//Gallery with vue
+const app = Vue.createApp({
+  data() {
+    return {
+      selectedCategory: 'All',
+      categories: ['All', 'Junior Year', 'Senior Year', 'Personal'],
+      websitesData: {}
+    };
+  },
+  methods: {
+    async fetchWebsitesData() {
+      try {
+        const response = await fetch('gallery.json'); // Links the json filename to the js
+        this.websitesData = await response.json();
+      } catch (error) {
+        console.error('Error loading website data:', error);
+      }
+    },
+    selectCategory(category) {
+      this.selectedCategory = category;
+    }
+  },
+  created() {
+    this.fetchWebsitesData();
+  }
+});
+
+app.mount('#vue_app');
