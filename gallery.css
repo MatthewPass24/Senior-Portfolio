@@ -58,3 +58,13 @@ body {
   .fa-magnifying-glass {
     font-size: 2rem;
   }
+/* Transition for gallery items (fade + zoom) */
+.gallery-enter-active, .gallery-leave-active {
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.gallery-enter-from, .gallery-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
