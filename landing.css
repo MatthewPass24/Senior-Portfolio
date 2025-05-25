@@ -126,3 +126,7 @@ body {
     height: 70vh;
 
   }
+
+  p{
+    font-size: clamp(2rem, 3vw, 8rem);
+  }
