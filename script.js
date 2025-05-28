@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.nav-button');
   const typedTextElement = document.querySelector('.typed-text');
