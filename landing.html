@@ -16,6 +16,9 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+          <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
         <link rel="stylesheet" href="landing.css">
     </head>
 
@@ -72,63 +75,91 @@
                   <h1 class="display-1">About Me</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="headshot"><img src="img/headshot.jpeg" alt="" srcset="" class="professional"></div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <p class="reveal-type">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deserunt laboriosam quasi perspiciatis voluptatum illum soluta voluptate cumque. Culpa, fugit sint ut ipsum nobis reprehenderit dolores velit minus magnam consequatur.</p>
-                </div>
-            </div>
-            <section class="timeline-section">
-                <div class="container">
-                  <h2 class="timeline-title">Resume</h2>
-                  <div class="timeline">
-              
-                    <!-- Timeline Item -->
-                    <div class="timeline-item">
-                      <div class="timeline-dot"></div>
-                      <div class="timeline-content">
-                        <h5>Software Engineer Intern</h5>
-                        <div class="company">Tech Solutions Inc.</div>
-                        <div class="date">Summer 2024</div>
-                        <p>Worked on frontend development using React and integrated REST APIs to streamline customer support features.</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="timeline-dot"></div>
-                      <div class="timeline-content">
-                        <h5>Web Developer Intern</h5>
-                        <div class="company">Creative Web Studio</div>
-                        <div class="date">Spring 2023</div>
-                        <p>Designed responsive websites and collaborated with UI/UX teams to improve performance.</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="timeline-dot"></div>
-                      <div class="timeline-content">
-                        <h5>B.S. in Computer Science</h5>
-                        <div class="company">Stevens Institute of Technology</div>
-                        <div class="date">2022 - 2026</div>
-                        <p>Studying software engineering, AI, and human-computer interaction. GPA: 3.8/4.0.</p>
-                      </div>
-                    </div>
-              
-                    <div class="timeline-item">
-                      <div class="timeline-dot"></div>
-                      <div class="timeline-content">
-                        <h5>High School Diploma</h5>
-                        <div class="company">Northside High School</div>
-                        <div class="date">2018 - 2022</div>
-                        <p>Graduated with honors. President of Italian Club and Web Design Club. SAT: 1450.</p>
-                      </div>
-                    </div>
-              
-                  </div>
-                </div>
-              </section>
+            <h1 class="text-center align-items-center">About Me</h1>
+<div class="container my-5 story">
+  <div class="row align-items-center justify-content-center text-center text-lg-start">
+    
+    <!-- Image Column -->
+    <div class="col-lg-5 mb-4 mb-lg-0 d-flex justify-content-center">
+      <div class="headshot">
+        <img src="img/headshot.jpeg" alt="Professional headshot" class="img-fluid professional rounded">
+      </div>
+    </div>
+    
+    <!-- Text Column -->
+    <div class="col-lg-6">
+      <p class="reveal-type" data-bg-color="#a1a1a1" data-fg-color="#197591">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, deserunt laboriosam quasi perspiciatis voluptatum illum soluta voluptate cumque. Culpa, fugit sint ut ipsum nobis reprehenderit dolores velit minus magnam consequatur.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<section class="resume" id="resume">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-right">
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item">
+            <h4>High School Diploma</h4>
+            <h5>2021 - 2025</h5>
+            <p>Some text would go here</p>
+          </div>
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item">
+            <h4>Brief Overview</h4>
+            <p>Some text would go here</p>
+          </div>
+          <div class="resume-item">
+            <h4>Another Item</h4>
+            <p>Some text would go here</p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item">
+            <h4>Details</h4>
+            <ul>
+              <li>Even more text goes on this side of the resume</li>
+              <li>Extra info about me</li>
+              <li>Extra info about me</li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>Details</h4>
+            <ul>
+              <li>Even more text goes on this side of the resume</li>
+              <li>Extra info about me</li>
+              <li>Extra info about me</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<h2 class="text-center align-items-center my-5">My Skills</h2>
+ <div class="skills-container">
+    <div class="skill-card" data-aos="fade" data-aos-delay="0">
+      Text goes here
+      <div class="icon-circle">
+        <i class="fa-solid fa-code"></i>
+      </div>
+    </div>
+    <div class="skill-card" data-aos="fade" data-aos-delay="150">
+      Text goes here
+      <div class="icon-circle">
+        <img src="https://img.icons8.com/ios-filled/50/000000/drawing.png" alt="Design Icon"/>
+      </div>
+    </div>
+    <div class="skill-card" data-aos="fade" data-aos-delay="300">
+      Text goes here
+      <div class="icon-circle">
+        <img src="https://img.icons8.com/ios-filled/50/000000/blender-3d.png" alt="Blender Icon"/>
+      </div>
+    </div>
+  </div>
         </main>
         <footer>
             <!-- place footer here -->
@@ -143,11 +174,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
         <script src="https://unpkg.com/split-type"></script>
         <script src="https://cdn.jsdeliver.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
             integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
             crossorigin="anonymous"
         ></script>
-        <script src="script.js"></script>
+          <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script src="landing.js"></script>
     </body>
 </html>

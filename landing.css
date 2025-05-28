@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #e1e9ec, #507994);
+    background: linear-gradient(to bottom, #ececec, #a8a8a8);
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -21,112 +21,137 @@ body {
   background-blend-mode: overlay;
   background-color: #0000003b;    
 }
-.timeline-section {
-    background: linear-gradient(to bottom, #e1e9ec, #507994);
-    padding: 60px 0;
-    position: relative;
-  }
-
-  .timeline-title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 50px;
-    text-align: center;
-  }
-
-  .timeline {
-    position: relative;
-    margin: 0 auto;
-    padding: 2rem 0;
-  }
-
-  .timeline::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: #1f4783;
-    transform: translateX(-50%);
-  }
-
-  .timeline-item {
-    position: relative;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .timeline-content {
-    position: relative;
-    width: 45%;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-
-  .timeline-dot {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 16px;
-    height: 16px;
-    background-color: #1f4783;
-    border-radius: 50%;
-    z-index: 2;
-  }
-
-  /* Left and right alignment on desktop */
-  @media (min-width: 768px) {
-    .timeline-item:nth-child(odd) .timeline-content {
-      left: 0;
+:root {
+      --heading-color: #1e1e1e;
+      --accent-color: #007bff;
+      --background-color: #fff;
+      --default-color: #343a40;
     }
 
-    .timeline-item:nth-child(even) .timeline-content {
-      left: 55%;
-    }
-  }
-
-  /* Stack on mobile */
-  @media (max-width: 767.98px) {
-    .timeline::before {
-      left: 8px;
+    .resume {
+      background: #f4f9ff;
+      padding: 60px 0;
     }
 
-    .timeline-content {
-      width: 100%;
-      margin-left: 30px;
+    .resume .resume-title {
+      color: var(--heading-color);
+      font-size: 26px;
+      font-weight: 700;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
 
-    .timeline-dot {
-      left: 8px;
-      transform: none;
+    .resume .resume-item {
+      padding: 0 0 20px 20px;
+      margin-top: -2px;
+      border-left: 2px solid var(--accent-color);
+      position: relative;
     }
-  }
 
-  .timeline-content h5 {
-    margin-bottom: 0.3rem;
-    font-weight: 600;
-  }
+    .resume .resume-item h4 {
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: color-mix(in srgb, var(--default-color), transparent 20%);
+      margin-bottom: 10px;
+    }
 
-  .timeline-content .company {
-    font-style: italic;
-    color: #6c757d;
-  }
+    .resume .resume-item h5 {
+      font-size: 16px;
+      padding: 5px 15px;
+      display: inline-block;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
 
-  .timeline-content .date {
-    font-size: 0.9rem;
-    color: #adb5bd;
-    margin-bottom: 10px;
-  }
+    .resume .resume-item ul {
+      padding-left: 20px;
+    }
 
+    .resume .resume-item ul li {
+      padding-bottom: 10px;
+    }
+
+    .resume .resume-item:last-child {
+      padding-bottom: 0;
+    }
+
+    .resume .resume-item::before {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50px;
+      left: -9px;
+      top: 0;
+      background: var(--background-color);
+      border: 2px solid var(--accent-color);
+    }
+   
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 5em;
+    }
+
+    .skill-card {
+      position: relative;
+      background: #ddd;
+      width: 200px;
+      height: 120px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.1em;
+    }
+
+    .icon-circle {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #56a2c4;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon-circle i,
+    .icon-circle img {
+      font-size: 32px;
+      color: black;
+      width: 40px;
+      height: 40px;
+    }
   img.professional{
     height: 70vh;
 
   }
 
   p{
-    font-size: clamp(2rem, 3vw, 8rem);
+    font-size: clamp(2rem, 2vw, 8rem);
   }
+.reveal-type {
+  color: inherit; /* or remove the color entirely */
+}
+.reveal-type span {
+  opacity: 0.2;
+}
+.headshot img.professional {
+  max-width: 300px; /* Optional: control image size */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.story{
+  padding-top: 5em;
+  padding-bottom: 5em;
+}

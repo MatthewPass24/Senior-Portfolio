@@ -1,35 +1,4 @@
-gsap.registerPlugin(ScrollTrigger)
 
-const splitTypes = document.querySelectorAll('.reveal-type')
-
-splitTypes.forEach((char,i) => {
-    const text = new SplitType(char, { types: 'chars'})
-
-    gsap.from(text.chars, {
-      scrollTrigger: {
-        trigger: char,
-        start: 'top 80%',
-        end: 'top 20%',
-        scrub: true,
-        markers: false
-      },
-      opacity: 0.2,
-      stagger: 0.1
-    })
-  })
-// Initialize Lenis
-const lenis = new Lenis()
-lenis.on('scroll', (e) => {
-  console.log(e);
-});
-
-// Use requestAnimationFrame to continuously update the scroll
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
 
 document.addEventListener('DOMContentLoaded', function () {
   const buttons = document.querySelectorAll('.nav-button');

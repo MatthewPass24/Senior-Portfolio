@@ -49,7 +49,7 @@
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
       },
       {
-        "img": "img/image 2.png",
+        "img": "img/workbased.png",
         "title": "Brandon Winecoor's Site",
         "link": "https://bwinecoor.github.io/newportfolio/site2.html#home",
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
@@ -96,6 +96,18 @@
       },
       {
         "img": "img/trunkortreat.png",
+        "title": "College Recruitment",
+        "link": "https://saltforsale.github.io/Phase-Tw0/",
+        "alt": "Screenshot of Collect Recruitment website"
+      },
+      {
+        "img": "img/house.png",
+        "title": "College Recruitment",
+        "link": "https://saltforsale.github.io/Phase-Tw0/",
+        "alt": "Screenshot of Collect Recruitment website"
+      },
+      {
+        "img": "img/workbased.png",
         "title": "College Recruitment",
         "link": "https://saltforsale.github.io/Phase-Tw0/",
         "alt": "Screenshot of Collect Recruitment website"

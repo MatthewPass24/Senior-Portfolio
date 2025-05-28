@@ -1,148 +1,122 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Title</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
 
-        <!-- Bootstrap CSS v5.2.1 -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous"
-        />
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <link rel="stylesheet" href="gallery.css">
-    </head>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-    <body>
-        <header>
-            <!-- place navbar here -->
-            <nav class="navbar navbar-light bg-light fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                                Offcanvas
-                            </h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="landing.html">About Me</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button class="btn btn-outline-success" type="submit">
-                                    Search
-                                </button>
-                            </form>
-                        </div>
-                    </div>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+  <header>
+    <!-- place navbar here -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Offcanvas
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="landing.html">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#">Action 1</a>
+                  <a class="dropdown-item" href="#">Action 2</a>
                 </div>
-            </nav>
-        </header>
-        <main>
-          <div class="banner w-100 mb-5 vh-80 d-flex justify-content-center align-items-center">
-            <div class="content text-center">
-              <h1 class="display-1">Gallery</h1>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="banner w-100 mb-5 vh-80 d-flex justify-content-center align-items-center">
+      <div class="content text-center">
+        <h1 class="display-1">Gallery</h1>
+      </div>
+    </div>
+    <h1 class="text-center">My Projects</h1>
+    <div id="vue_app" class="container py-5">
+      <!-- Category Buttons -->
+      <div class="mb-4 text-center">
+        <button class="btn me-2" v-for="category in categories" :key="category"
+          :class="{ active: selectedCategory === category }" @click="selectCategory(category)">
+          {{ category }}
+        </button>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" v-for="(image, index) in filteredImages" :key="index">
+          <div class="image-container" @click="openModal(image)">
+            <img :src="image.img" :alt="image.alt">
+            <div class="overlay">
+              <i class="fas fa-magnifying-glass"></i>
             </div>
+          </div>
         </div>
-        <h1 class="text-center">My Projects</h1>
-            <div id="vue_app" class="container py-5">
-  <!-- Category Buttons -->
-  <div class="mb-4 text-center">
-    <button
-      class="btn me-2"
-      v-for="category in categories"
-      :key="category"
-      :class="{ active: selectedCategory === category }"
-      @click="selectCategory(category)"
-    >
-      {{ category }}
-    </button>
-  </div>
+      </div>
 
-  <!-- Image Grid -->
-  <div class="row g-4">
-    <div
-      class="col-lg-4 col-md-6"
-      v-for="(image, index) in filteredImages"
-      :key="index"
-    >
-      <div class="image-container" @click="openModal(image)">
-        <img :src="image.img" :alt="image.alt">
-        <div class="overlay">
-          <i class="fas fa-magnifying-glass"></i>
+      <!-- Modal -->
+      <div class="modal fade show" tabindex="-1" role="dialog" v-if="modalVisible"
+        style="display: block; background: rgba(0, 0, 0, 0.7)" @click.self="closeModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <img :src="activeImage.img" class="img-fluid mb-3" :alt="activeImage.alt">
+              <p class="mb-1"><strong>{{ activeImage.title }}</strong></p>
+              <a :href="activeImage.link" target="_blank" class="btn btn-primary">Visit Site</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- Modal -->
-  <div
-    class="modal fade show"
-    tabindex="-1"
-    role="dialog"
-    v-if="modalVisible"
-    style="display: block; background: rgba(0, 0, 0, 0.7)"
-    @click.self="closeModal"
-  >
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-body text-center">
-          <img :src="activeImage.img" class="img-fluid mb-3" :alt="activeImage.alt">
-          <p class="mb-1"><strong>{{ activeImage.title }}</strong></p>
-          <a :href="activeImage.link" target="_blank" class="btn btn-primary">Visit Site</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-        </main>
-        <footer>
-            <!-- place footer here -->
-        </footer>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"
-        ></script>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"
-        ></script>
-        <script src="script.js"></script>
-    </body>
 </html>
