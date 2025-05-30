@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     background: linear-gradient(to bottom, #ececec, #a8a8a8);
     min-height: 100vh;
@@ -23,7 +25,7 @@ body {
 }
 :root {
       --heading-color: #1e1e1e;
-      --accent-color: #007bff;
+      --accent-color: #56a2c4;
       --background-color: #fff;
       --default-color: #343a40;
     }
@@ -137,7 +139,13 @@ body {
   }
 
   p{
-    font-size: clamp(2rem, 2vw, 8rem);
+    font-size: clamp(2rem, 1vw, 8rem);
+    font-family: "Poppins", sans-serif;
+  }
+  h1.title{
+    font-family: "Outfit", sans-serif;
+    font-weight: 500;
+    font-size: 6em;
   }
 .reveal-type {
   color: inherit; /* or remove the color entirely */
