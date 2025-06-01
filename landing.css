@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
-    background: linear-gradient(to bottom, #ececec, #a8a8a8);
+    background: linear-gradient(to bottom, #f8f8f8, #fdfdfd);
     min-height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -9,19 +9,19 @@ body {
   }
   /*landing area*/
 .banner{
-  background: url("images/landing.jpg");
-  height: 100vh;
-  margin-top: 0;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-blend-mode: overlay;
-  background-color: #0000003b;    
+ background: url("img/IMG_2792.JPG");
+ height: 100vh;
+ margin-top: 0;
+ background-size: cover;
+ background-position: center;
+ overflow: hidden;
+ position: relative;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background-blend-mode: overlay;
+ background-color: #0000006e;    
 }
 :root {
       --heading-color: #1e1e1e;
@@ -31,7 +31,7 @@ body {
     }
 
     .resume {
-      background: #f4f9ff;
+      background: #dbe1e9;
       padding: 60px 0;
     }
 
@@ -99,18 +99,20 @@ body {
       flex-wrap: wrap;
       margin-bottom: 5em;
     }
-
-    .skill-card {
-      position: relative;
-      background: #ddd;
-      width: 200px;
-      height: 120px;
-      border-radius: 6px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.1em;
-    }
+.skill-card {
+  position: relative;
+  background: #ddd;
+  width: 100%;
+  min-height: 150px;
+  padding: 3em;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1em;
+  text-align: center;
+  flex-direction: column;
+}
 
     .icon-circle {
       position: absolute;
@@ -162,4 +164,16 @@ body {
 .story{
   padding-top: 5em;
   padding-bottom: 5em;
+}
+#logo{
+      display: block; /* ensures the link takes up space */
+    background-color: transparent;
+    border: none;
+    background-image: url("img/Untitled_design-removebg-preview.png");
+    height: 70px;
+    width: 70px;
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: .75em;
 }
