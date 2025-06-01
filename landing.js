@@ -1,50 +1,57 @@
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true
-    });
-gsap.registerPlugin(ScrollTrigger)
+  // Initialize AOS
+AOS.init({
+  duration: 800,
+  easing: 'ease-in-out',
+  once: true
+});
 
-const splitTypes = document.querySelectorAll('.reveal-type')
+// Register GSAP ScrollTrigger
+gsap.registerPlugin(ScrollTrigger);
 
-splitTypes.forEach((char, i) => {
-  const bg = char.dataset.bgColor
-  const fg = char.dataset.fgColor
+// Animate all elements with .reveal-type
+const splitTypes = document.querySelectorAll('.reveal-type');
 
-  const text = new SplitType(char, { types: 'chars' });
+splitTypes.forEach((element) => {
+  const bg = element.dataset.bgColor;
+  const fg = element.dataset.fgColor;
 
-  // ✅ Set initial style: light gray with low opacity
-  gsap.set(text.chars, {
-    opacity: 0.4,
-    color: "#222222" // <-- light gray
+  // Split into words instead of characters
+  const text = new SplitType(element, { types: 'words' });
+
+  // Set initial style
+  gsap.set(text.words, {
+    opacity: 0.3,
+    y: 10,
+    color: "#222222" // light gray
   });
 
-  // ✅ Animate to teal on scroll
-  gsap.to(text.chars, {
+  // Animate on scroll
+  gsap.to(text.words, {
     scrollTrigger: {
-      trigger: char,
+      trigger: element,
       start: 'top 80%',
       end: 'top 20%',
       scrub: true,
       markers: false
     },
     opacity: 1,
+    y: 0,
     color: fg,
-    stagger: 0.1
+    stagger: 0.05,
+    ease: "power2.out"
   });
 });
 
-// Initialize Lenis
-const lenis = new Lenis()
+// Initialize Lenis for smooth scroll
+const lenis = new Lenis();
+
 lenis.on('scroll', (e) => {
-  console.log(e);
+  // Optional: console.log(e);
 });
 
-// Use requestAnimationFrame to continuously update the scroll
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
 }
 
 requestAnimationFrame(raf);
-    AOS.init({ duration: 800, once: true });
