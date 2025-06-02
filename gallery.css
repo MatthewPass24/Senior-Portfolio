@@ -84,3 +84,82 @@ h1.works{
 .btn.tabs{
   font-family: "Poppins", sans-serif;
 }
+.project-slide {
+  position: relative;
+  max-width: 850px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  height: 400px;
+}
+
+.project-slide img {
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-slide:hover img {
+  transform: scale(1.05);
+}
+
+.caption-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  color: white;
+  padding: 1rem;
+  text-align: left;
+}
+
+.caption-overlay h5 {
+  margin-bottom: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .project-slide {
+    height: 250px;
+  }
+  .caption-overlay {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+}
+/* === Carousel Arrow Custom Styling === */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4); /* or use a CSS variable */
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Override Bootstrap's default icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  filter: invert(1); /* makes white arrow if icon is black */
+}
+
+/* Optional: Position tweak */
+.carousel-control-prev {
+  left: -25px;
+}
+
+.carousel-control-next {
+  right: -25px;
+}
