@@ -189,35 +189,100 @@ h2{
       font-family: "Outfit", sans-serif;
       font-size: 3em;
 }
-  p{
-    font-size: clamp(2rem, 1vw, 8rem);
-    font-family: "Poppins", sans-serif;
-  }
-  h1.title{
-    font-family: "Outfit", sans-serif;
-    font-weight: 500;
-    font-size: 6em;
-  }
-.reveal-type { 
-  color: inherit; /* or remove the color entirely */
+/* Paragraph Text - Responsive Font Size */
+p {
+  font-size: clamp(1.5rem, 1.2vw, 1.25rem);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* Section Title */
+h1.title {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 6em;
+}
+
+/* Reveal effect styling */
+.reveal-type {
+  color: inherit;
 }
 .reveal-type span {
   opacity: 0.2;
 }
-.headshot img.professional {
-  max-width: 300px; /* Optional: control image size */
+
+/* Responsive Image Styling */
+.about-image-wrapper img {
   width: 100%;
+  max-width: 350px;
   height: auto;
+  border-radius: 1rem;
   object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
-.story{
+
+/* Image sizing on different screen widths */
+@media (min-width: 768px) {
+  .about-image-wrapper img {
+    max-width: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .about-image-wrapper img {
+    max-width: 300px;
+  }
+}
+
+/* Padding for story section */
+.story {
   padding-top: 5em;
   padding-bottom: 5em;
 }
 
-/* Add the blue left border on text box */
+/* Text box styling */
 .about-text-card {
+  padding: 1.5rem;
   border-left: 5px solid #2a96d4;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Ensure image and text columns are same height */
+.row.align-items-stretch > .col-lg-4,
+.row.align-items-stretch > .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 767.98px) {
+  .row.align-items-stretch > .col-lg-4,
+  .row.align-items-stretch > .col-lg-6 {
+    display: block;
+  }
+
+  .about-text-card {
+    border-left: none;
+    border-top: 5px solid #2a96d4;
+  }
+
+  .about-image-wrapper {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .about-image-wrapper img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
 }
 
 #logo{

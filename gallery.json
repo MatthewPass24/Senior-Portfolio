@@ -115,19 +115,38 @@
     ],
         "Personal": [
       {
-        "img": "img/films.png",
+        "img": "img/portrait1.png",
         "title": "NJIT Movie Project",
         "link": "https://adilsoomro15.github.io/Soomro-P3/",
         "alt": "Screenshot of NJIT Movie Project site"
       },
+
       {
-        "img": "img/lottery.png",
+        "img": "img/landscape1.jpg",
+        "title": "NJIT Slideshow Project",
+        "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
+        "alt": "Screenshot of NJIT Slideshow Project site"
+      },      
+      {
+        "img": "img/portrait2.jpg",
         "title": "Crochet Club Project",
         "link": "https://523chloel.github.io/CrochetCrew/",
         "alt": "Screenshot of Crochet Club Project website"
       },
+            {
+        "img": "img/landscape2.jpg",
+        "title": "NJIT Slideshow Project",
+        "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
+        "alt": "Screenshot of NJIT Slideshow Project site"
+      },
+                  {
+        "img": "img/portrait 3.jpg",
+        "title": "NJIT Slideshow Project",
+        "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
+        "alt": "Screenshot of NJIT Slideshow Project site"
+      },
       {
-        "img": "img/trunkortreat.png",
+        "img": "img/landscape3.jpg",
         "title": "NJIT Slideshow Project",
         "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
         "alt": "Screenshot of NJIT Slideshow Project site"
