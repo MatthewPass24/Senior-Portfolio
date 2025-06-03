@@ -25,49 +25,27 @@
     <body>
         <header>
             <!-- place navbar here -->
-            <nav class="navbar navbar-light bg-light fixed-top">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html" id="logo"></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                                Offcanvas
-                            </h5>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                                        <a class="dropdown-item" href="#">Action 1</a>
-                                        <a class="dropdown-item" href="#">Action 2</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <form class="d-flex">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                                <button class="btn btn-outline-success" type="submit">
-                                    Search
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-scrolled">
+      <div class="container-fluid">
+                           <a class="navbar-brand" href="index.html" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="landing.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
         </header>
         <main>
             <div class="banner w-100 mb-5 vh-80 d-flex justify-content-center align-items-center">
@@ -117,6 +95,8 @@
           <h4>High School Diploma</h4>
           <h5>2021 - 2025</h5>
           <p>Graduating from Marlboro High School with a strong foundation in web design and computer science.</p>
+          <p>Cumulative GPA: 5.06</p>
+
         </div>
 
         <h3 class="resume-title mt-5 mb-4">
@@ -140,9 +120,17 @@
         <div class="resume-item py-2">
           <h4>Technical Skills</h4>
           <ul>
-            <li>Responsive Web Design and Cross-Browser Compatibility</li>
+            <li>Languages: HTML, CSS, JavaScript, JSON, Bootstrap</li>
             <li>JavaScript Animations & UI/UX Best Practices</li>
             <li>Version Control with Git & Collaboration Tools</li>
+          </ul>
+        </div>
+        <div class="resume-item py-2">
+          <h4>Awards</h4>
+          <ul>
+            <li>NJ Seal of Biliteracy</li>
+            <li>Honor Roll (Freshman, Sophomore, Junior, and Senior Year)</li>
+            <li>2024 AP Scholar</li>
           </ul>
         </div>
         <div class="resume-item py-2">
@@ -161,8 +149,8 @@
 
 
 <h2 class="text-center my-5">My Skills</h2>
-<div class="container my-5">
-  <div class="row justify-content-center gy-5">
+<div class="container strengths">
+  <div class="row justify-content-center ">
     
     <!-- HTML Skill -->
     <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">

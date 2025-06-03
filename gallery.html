@@ -20,34 +20,24 @@
 <body>
   <header>
     <!-- place navbar here -->
-    <nav class="navbar navbar-light bg-light fixed-top">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-scrolled">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
+                           <a class="navbar-brand" href="index.html" id="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-              Offcanvas
-            </h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="landing.html">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
-              </li>
-            </ul>
-
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="landing.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -88,66 +78,102 @@
           <div class="modal-content">
             <div class="modal-body text-center">
               <img :src="activeImage.img" class="img-fluid mb-3" :alt="activeImage.alt">
-              <p class="mb-1"><strong>{{ activeImage.title }}</strong></p>
-              <a :href="activeImage.link" target="_blank" class="btn btn-primary">Visit Site</a>
+              <h5 class="mb-3 name"><strong>{{ activeImage.title }}</strong></h5>
+              <p class="my-2 info">{{ activeImage.description }}</p>
+              <a :href="activeImage.link" target="_blank" class="btn visit">Visit Site</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Digital Projects Slideshow Section -->
-    <section id="projects-carousel" class="my-5" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
-      <div class="container">
-        <h2 class="text-center mb-4">My Digital Projects</h2>
-        <div id="projectCarousel" class="carousel slide" data-bs-ride="false">
-    
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="project-slide">
-                <img src="img/Procreate-1.png" class="d-block w-100" alt="Project 1">
-                <div class="caption-overlay">
-                  <h5>Digital Portrait #1</h5>
-                  <p>Built with HTML, CSS, and JavaScript to showcase my resume and work.</p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="carousel-item">
-              <div class="project-slide">
-                <img src="img/donut.png" class="d-block w-100" alt="Project 2">
-                <div class="caption-overlay">
-                  <h5>Donut Blender Project</h5>
-                  <p>Filterable gallery using JSON and transitions, inspired by iPortfolio.</p>
-                </div>
-              </div>
-            </div>
-    
-            <div class="carousel-item">
-              <div class="project-slide">
-                <img src="img/project3.jpg" class="d-block w-100" alt="Project 3">
-                <div class="caption-overlay">
-                  <h5>React Chatbot UI</h5>
-                  <p>Clean, responsive chatbot interface using React and Tailwind CSS.</p>
-                </div>
+<section id="projects-carousel" class="my-5" data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
+  <div class="container">
+    <h1 class="text-center mb-5 works">My Digital Projects</h1>
+
+    <div id="projectCarousel" class="carousel slide" data-bs-ride="false">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="project-slide">
+            <img src="img/Procreate-1.png" class="d-block w-100" alt="Digital Portrait 1">
+            <div class="caption-overlay">
+              <div class="caption-content">
+                <h5>Digital Portrait #1</h5>
+                <p>Built with HTML, CSS, and JavaScript to showcase my resume and work.</p>
               </div>
             </div>
           </div>
-    
-          <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </button>
-    
-          <div class="carousel-indicators mt-3">
-            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-item">
+          <div class="project-slide">
+            <img src="img/donut.png" class="d-block w-100" alt="Donut Project">
+            <div class="caption-overlay">
+              <div class="caption-content">
+                <h5>Donut Blender Project</h5>
+                <p>Filterable gallery using JSON and transitions, inspired by iPortfolio.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="project-slide">
+            <img src="img/Procreate-2.png" class="d-block w-100" alt="Digital Portrait 2">
+            <div class="caption-overlay">
+              <div class="caption-content">
+                <h5>Digital Portrait #2</h5>
+                <p>Clean, responsive chatbot interface using React and Tailwind CSS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="project-slide">
+            <img src="img/Procreate-3.jpg" class="d-block w-100" alt="Batman Drawing">
+            <div class="caption-overlay">
+              <div class="caption-content">
+                <h5>Batman Drawing</h5>
+                <p>Clean, responsive chatbot interface using React and Tailwind CSS.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="project-slide">
+            <img src="img/sculpture.png" class="d-block w-100" alt="3D Sculpture">
+            <div class="caption-overlay">
+              <div class="caption-content">
+                <h5>3D Sculpture</h5>
+                <p>Modeled in Blender and post-processed with Procreate for lighting effects.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Navigation arrows -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators mt-3">
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+    </div>
+  </div>
+</section>
   </main>
   <footer>
     <!-- place footer here -->
@@ -163,5 +189,6 @@ integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa
     crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="gallery.js"></script>
+  
 </body>
 </html>

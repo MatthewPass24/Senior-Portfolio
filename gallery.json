@@ -3,55 +3,64 @@
       {
         "img": "img/alumn.png",
         "title": "Web Design Client Project",
-        "link": "https://portfolio.byteroach.com/?authuser=0",
+        "description": "This website focused on past Web Design students and where they are now, what majors they are pursuing, and the jobs they can get",
+        "link": "https://zlevin1228.github.io/WebDesign/alumni.html",
         "alt": "Screenshot of Dominic Adragna's portfolio site"
       },
       {
         "img": "img/films.png",
         "title": "NJIT Project #2",
-        "link": "https://abbiemarder.github.io/Senior-Portfolio/?authuser=0",
+        "description": "This NJIT-based website uses Vue to display my top movies",
+        "link": "https://matthewpass24.github.io/NJIT-3_StarterFiles/",
         "alt": "Screenshot of Abbie Marder's portfolio site"
       },
       {
         "img": "img/littlebird.png",
         "title": "Little Bird Toy Company",
-        "link": "https://524rc.github.io/Port3/?authuser=0",
+        "description": "This website was for a simulated wooden toy company, which showed the products and had a cart system to purchase the items",
+        "link": "https://matthewpass24.github.io/Final-Website/",
         "alt": "Screenshot of Ryan Chung's portfolio site"
       },
       {
         "img": "img/college.png",
         "title": "College Recruitment",
-        "link": "https://bwinecoor.github.io/newportfolio/site2.html#home",
+        "description": "This website highlighted why Carnegie Mellon is a good school for pursuing technology and outlined the majors, programs, and student life",
+        "link": "https://matthewpass24.github.io/College-Recruitment/",
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
       },
       {
         "img": "img/scissors.png",
         "title": "Rock Paper Scissors Website",
-        "link": "https://bwinecoor.github.io/newportfolio/site2.html#home",
+        "description": "This fun, interactive website used Javascript functions and switch statements to build a RPS Game",
+        "link": "https://matthewpass24.github.io/RPS/",
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
       },
       {
         "img": "img/trunkortreat.png",
         "title": "MHS Trunk or Treat",
-        "link": "https://bwinecoor.github.io/newportfolio/site2.html#home",
+        "description": "This website displayed Marlboro High School's annual Trunk or Treat, showcasing notable decorations and providing info on the event",
+        "link": "https://matthewpass24.github.io/Trunk-or-Treat/",
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
       },
       {
         "img": "img/house.png",
         "title": "NJIT Project #1",
-        "link": "https://bwinecoor.github.io/newportfolio/site2.html#home",
+        "description": "This NJIT Project is an interactive photo gallery of my favorite episodes from the series House MD",
+        "link": "https://matthewpass24.github.io/NJIT-Project-1/",
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
       },
       {
         "img": "img/lottery.png",
         "title": "Lucky Me Lottery",
-        "link": "https://bwinecoor.github.io/newportfolio/site2.html#home",
+        "description": "This website randomly selects one of the entered names, essentially picking who wins the lottery",
+        "link": "https://matthewpass24.github.io/Lucky-Me-Lottery/",
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
       },
       {
         "img": "img/workbased.png",
         "title": "Work Based Learning Project",
-        "link": "https://bwinecoor.github.io/newportfolio/site2.html#home",
+        "description": "This website is for my client, who wants to show off her videography knowledge and past works while building a name for herself",
+        "link": "https://matthewpass24.github.io/Work-Based-Project/",
         "alt": "Screenshot of Brandon Winecoor's portfolio site"
       }
     ],
@@ -59,18 +68,21 @@
       {
         "img": "img/lottery.png",
         "title": "Lucky Me Lottery",
+        "description": "This website randomly selects one of the entered names, essentially picking who wins the lottery",
         "link": "https://issac-eligulashvili.github.io/rps/",
         "alt": "Screenshot of Rock Paper Scissors game project"
       },
       {
         "img": "img/scissors.png",
         "title": "Rock Paper Scissors",
+        "description": "This fun, interactive website used Javascript functions and switch statements to build a RPS Game",
         "link": "https://saltforsale.github.io/Phase-Tw0/",
         "alt": "Screenshot of Work Learning Project website"
       },
       {
         "img": "img/littlebird.png",
         "title": "Little Bird Toy Company",
+        "description": "This website was for a simulated wooden toy company, which showed the products and had a cart system to purchase the items",
         "link": "https://ayatsakalla.github.io/Look-Ma--I-m-Famous/index.html",
         "alt": "Screenshot of Coco Chanel website project"
       }
@@ -79,29 +91,34 @@
       {
         "img": "img/alumn.png",
         "title": "Web Design Client Project",
+        "description": "This website focused on past Web Design students and where they are now, what majors they are pursuing, and the jobs they can get",
         "link": "https://adilsoomro15.github.io/Soomro-P3/",
         "alt": "Screenshot of NJIT Movie Project site"
       },
       {
         "img": "img/films.png",
         "title": "NJIT Project #2",
+        "description": "This NJIT-based website uses Vue to display my top movies",
         "link": "https://523chloel.github.io/CrochetCrew/",
         "alt": "Screenshot of Crochet Club Project website"
       },
       {
         "img": "img/college.png",
         "title": "College Recruitment",
+        "description": "This website highlighted why Carnegie Mellon is a good school for pursuing technology and outlined the majors, programs, and student life",
         "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
         "alt": "Screenshot of NJIT Slideshow Project site"
       },
       {
         "img": "img/trunkortreat.png",
         "title": "MHS Trunk or Treat",
+        "description": "This website displayed Marlboro High School's annual Trunk or Treat, showcasing notable decorations and providing info on the event",
         "link": "https://saltforsale.github.io/Phase-Tw0/",
         "alt": "Screenshot of Collect Recruitment website"
       },
       {
         "img": "img/house.png",
+        "description": "This NJIT Project is an interactive photo gallery of my favorite episodes from the series House MD",
         "title": "NJIT Project #1",
         "link": "https://saltforsale.github.io/Phase-Tw0/",
         "alt": "Screenshot of Collect Recruitment website"
@@ -109,6 +126,7 @@
       {
         "img": "img/workbased.png",
         "title": "Work Based Learning Project",
+        "description": "This website is for my client, who wants to show off her videography knowledge and past works while building a name for herself",
         "link": "https://saltforsale.github.io/Phase-Tw0/",
         "alt": "Screenshot of Collect Recruitment website"
       }
@@ -116,38 +134,44 @@
         "Personal": [
       {
         "img": "img/portrait1.png",
-        "title": "NJIT Movie Project",
+        "title": "Tobey Maguire Portrait",
+        "description": "This is a pencil portrait of Tobey Maguire, portraying Spider-Man",
         "link": "https://adilsoomro15.github.io/Soomro-P3/",
         "alt": "Screenshot of NJIT Movie Project site"
       },
 
       {
         "img": "img/landscape1.jpg",
-        "title": "NJIT Slideshow Project",
+        "title": "Acrylic Painting Landscape",
+        "description": "This is a Japanese-inspired landscape I made for my cousin",
         "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
         "alt": "Screenshot of NJIT Slideshow Project site"
       },      
       {
         "img": "img/portrait2.jpg",
-        "title": "Crochet Club Project",
+        "title": "Leonardo DiCaprio Portrait",
+        "description": "This is a pencil portrait of Leonardo DiCaprio, portraying Jack Dawson",
         "link": "https://523chloel.github.io/CrochetCrew/",
         "alt": "Screenshot of Crochet Club Project website"
       },
             {
         "img": "img/landscape2.jpg",
-        "title": "NJIT Slideshow Project",
+        "title": "Oil Painting Landscape",
+        "description": "This is an oil painting of one of Bob Ross's landscapes",
         "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
         "alt": "Screenshot of NJIT Slideshow Project site"
       },
                   {
         "img": "img/portrait 3.jpg",
-        "title": "NJIT Slideshow Project",
+        "title": "Natalia Dyer Portrait",
+        "description": "This is a pencil portrait of Natalia Dyer",
         "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
         "alt": "Screenshot of NJIT Slideshow Project site"
       },
       {
         "img": "img/landscape3.jpg",
-        "title": "NJIT Slideshow Project",
+        "title": "Planet Spray Painting",
+        "description": "This is a space scene I created using spray-paint and newspaper",
         "link": "https://zlevin1228.github.io/NJIT-Slideshow/",
         "alt": "Screenshot of NJIT Slideshow Project site"
       }

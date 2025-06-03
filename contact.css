@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     margin-top:20px;
     background:#eee;
@@ -46,4 +48,78 @@ body{
 }
 .shadow-lg {
     box-shadow: 0 1rem 3rem rgba(132,138,163,0.1) !important;
+}
+#logo{
+      display: block; /* ensures the link takes up space */
+    background-color: transparent;
+    border: none;
+    background-image: url("img/Untitled_design-removebg-preview.png");
+    height: 70px;
+    width: 70px;
+    background-size: 100px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: .75em;
+}
+/* Base Navbar Styling */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.301);
+  transition: all 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Brand Logo */
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #56a2c4;
+  transition: color 0.3s ease;
+}
+.navbar-brand:hover {
+  color: #3887ac;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  position: relative;
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #56a2c4;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #56a2c4;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+  color: #56a2c4 !important;
+  font-weight: 600;
+}
+
+/* Responsive Toggler Icon Color */
+.navbar-toggler {
+  border-color: transparent;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2356a2c4' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(86, 162, 196, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
