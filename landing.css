@@ -33,7 +33,7 @@ body {
   margin-bottom: 5em;
 }
 .resume {
-  background: #dbe1e963;
+  background: rgba(207, 231, 250, 0.286);
   padding: 60px 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
