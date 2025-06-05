@@ -30,15 +30,15 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 //Gallery with vue
 const app = Vue.createApp({
-data() {
-  return {
-    selectedCategory: 'All',
-    categories: ['All', 'Junior Year', 'Senior Year', 'Personal'],
-    websitesData: {},
-    modalVisible: false,         // <--- important
-    activeImage: {}              // <--- important
-  };
-},
+  data() {
+    return {
+      selectedCategory: 'All',
+      categories: ['All', 'Junior Year', 'Senior Year', 'Personal'],
+      websitesData: {},
+      modalVisible: false,         // <--- important
+      activeImage: {}              // <--- important
+    };
+  },
 
   computed: {
     filteredImages() {

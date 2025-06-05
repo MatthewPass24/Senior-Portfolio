@@ -42,6 +42,7 @@ h1 {
     transform: translateY(100px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -51,7 +52,8 @@ h1 {
 .computer {
   width: 100%;
   height: 0;
-  padding-bottom: 62.5%; /* maintain aspect ratio */
+  padding-bottom: 62.5%;
+  /* maintain aspect ratio */
   background-image: url('img/laptop-transparent-image-14.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -71,13 +73,17 @@ h1 {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* vertical centering */
-  align-items: center;      /* horizontal centering */
-  gap: 1.5rem;              /* spacing between terminal and buttons */
+  justify-content: center;
+  /* vertical centering */
+  align-items: center;
+  /* horizontal centering */
+  gap: 1.5rem;
+  /* spacing between terminal and buttons */
 
   box-sizing: border-box;
 
-  overflow-y: hidden; /* prevent scroll to keep content centered */
+  overflow-y: hidden;
+  /* prevent scroll to keep content centered */
 }
 
 .terminal {
@@ -95,19 +101,24 @@ h1 {
   border-right: 2px solid var(--accent-color);
   white-space: nowrap;
   overflow: hidden;
-  margin: 0 auto; /* center horizontally */
+  margin: 0 auto;
+  /* center horizontally */
   font-family: 'Courier New', monospace;
   font-size: clamp(12px, 2vw, 18px);
   line-height: 1.6;
   color: var(--accent-color);
   animation: blink-caret 0.75s step-end infinite;
-  width: max-content; /* shrink width to text */
+  width: max-content;
+  /* shrink width to text */
 }
 
 @keyframes blink-caret {
-  0%, 100% {
+
+  0%,
+  100% {
     border-color: transparent;
   }
+
   50% {
     border-color: var(--accent-color);
   }
@@ -158,8 +169,13 @@ h1 {
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Responsive adjustments for smaller screens */
